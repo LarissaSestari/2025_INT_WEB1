@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="principal.html">Gelato sorveteria</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="principal.html">Principal</a>
+                    </li>
+
+                    <!-- CADASTROS -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Cadastros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cadastrodeusuarios.html">Usuários</a></li>
+                            <li><a class="dropdown-item" href="cadastrodeclientes.html">Clientes</a></li>
+                            <li><a class="dropdown-item" href="cadastrodeproduto.html">Produto</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="logintela.html">Sair</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO -->
+    <div class="container py-4">
+        <div class="card shadow-sm p-4">
+            <h4 class="mb-4">Cadastro de Cliente</h4>
+
+            <form>
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <label class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" placeholder="Digite o seu nome">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Digite o seu Email">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">Telefone</label>
+                        <input type="text" class="form-control" placeholder="(00) 00000-0000">
+                    </div>
+
+                    <div class="col-md-8">
+                        <label class="form-label">Endereço</label>
+                        <input type="text" class="form-control" placeholder="Rua, número, bairro">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Cidade</label>
+                        <input type="text" class="form-control" placeholder="Digite a sua cidade">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label">Estado</label>
+                        <select class="form-select">
+                            <option value="">-- UF --</option>
+                            <option value="PR">PR - Paraná</option>
+                            <option value="RS">RS - Rio Grande do Sul</option>
+                            <option value="SC">SC - Santa Catarina</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label">CEP</label>
+                        <input type="text" class="form-control" placeholder="00000-000">
+                    </div>
+
+                </div>
+
+                <div class="mt-4 d-flex gap-2">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+
+                    <!-- BOTÃO VOLTAR REDIRECIONANDO -->
+                    <a href="principal.html" class="btn btn-secondary">Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

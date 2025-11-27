@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Listagem de Clientes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Gelato sorveteria</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-3">
+
+        <!-- PRINCIPAL -->
+        <li class="nav-item"><a class="nav-link" href="principal.html">Principal</a></li>
+
+        <!-- CADASTROS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Cadastros</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="cadastrodeclientes.html">Cadastro de Clientes</a></li>
+            <li><a class="dropdown-item" href="cadastrodeusuarios.html">Cadastro de Usuários</a></li>
+            <li><a class="dropdown-item" href="cadastrodeprodutos.html">Cadastro de Produtos</a></li>
+          </ul>
+        </li>
+
+        <!-- LISTAGENS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Listagens</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="listagemdeusuarios.html">Usuários</a></li>
+            <li><a class="dropdown-item" href="listagemdeclientes.html">Clientes</a></li>
+            <li><a class="dropdown-item" href="listagemdeproduto.html">Produtos</a></li>
+          </ul>
+        </li>
+
+        <!-- SAIR -->
+        <li class="nav-item"><a class="nav-link" href="logintela.html">Sair</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-4">
+  <h3 class="mb-4">Listagem de Clientes</h3>
+
+  <!-- Pesquisa -->
+  <form class="row g-3 mb-3" role="search" onsubmit="return false;">
+    <div class="col-sm-8">
+      <label class="form-label visually-hidden" for="q">Pesquisar</label>
+      <input id="q" class="form-control" type="search" placeholder="Pesquisar por nome, email ou telefone">
+    </div>
+
+    <div class="col-sm-2 d-grid">
+      <button class="btn btn-primary" type="button">Pesquisar</button>
+    </div>
+
+    <div class="col-sm-2 d-grid">
+      <!-- BOTÃO "NOVO" → CADASTRO DE CLIENTES -->
+      <a class="btn btn-secondary" href="cadastrodeclientes.html" role="button">Novo</a>
+    </div>
+  </form>
+
+  <!-- Tabela -->
+  <div class="table-responsive">
+    <table class="table table-striped table-hover align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Email</th>
+          <th scope="col">Telefone</th>
+          <th scope="col">UF</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Eloisa Campos</td>
+          <td>elocampos@email.com</td>
+          <td>(44) 99876-1234</td>
+          <td>PR</td>
+          <td>
+            <button class="btn btn-sm btn-outline-warning me-1">Editar</button>
+            <button class="btn btn-sm btn-outline-danger">Remover</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Camila Correia</td>
+          <td>camilacorreia@mail.com</td>
+          <td>(41) 98765-4321</td>
+          <td>SC</td>
+          <td>
+            <button class="btn btn-sm btn-outline-warning me-1">Editar</button>
+            <button class="btn btn-sm btn-outline-danger">Remover</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Mikaella Borges</td>
+          <td>mikaborges@mail.com</td>
+          <td>(51) 91234-0000</td>
+          <td>RS</td>
+          <td>
+            <button class="btn btn-sm btn-outline-warning me-1">Editar</button>
+            <button class="btn btn-sm btn-outline-danger">Remover</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>Igor Delmonaco</td>
+          <td>igordelmonaco@gmail.com</td>
+          <td>(44) 05680-5319</td>
+          <td>PR</td>
+          <td>
+            <button class="btn btn-sm btn-outline-warning me-1">Editar</button>
+            <button class="btn btn-sm btn-outline-danger">Remover</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- VOLTAR -->
+  <a href="principal.html" class="btn btn-secondary mt-3">Voltar</a>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
